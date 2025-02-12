@@ -1,13 +1,11 @@
 import React from 'react';
 import { useRoutes, Navigate } from 'react-router-dom';
-import AuthGuard from '../guards/AuthGuard';
 import BlankLayout from '../layouts/BlankLayout';
 import MainLayout from "../layouts/MainLayout";
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import NotFound from '../pages/NotFound';
 import About from "../pages/About"
-import { PATH_DASHBOARD, PATH_AUTH } from './paths';
 import Home from "../pages/Home";
 import PeopleManagementCaseStudyScreen from "../pages/PeopleManagementCaseStudyScreen";
 import WebDesignCaseStudyScreen from "../pages/WebDesignCaseStudyScreen";
