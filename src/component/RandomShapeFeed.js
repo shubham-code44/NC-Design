@@ -1,17 +1,13 @@
 import React, {useState} from 'react';
-import {Grid, Card, Box, Typography, CardContent, Modal, Dialog} from '@mui/material';
-import AboutImage1 from "../images/about/aboutImage1.png"
+import {Grid, Card, Box, Typography, Dialog} from '@mui/material';
 import nehaImage1 from "../images/nehaImages/nehaImage1.jpg"
 import nehaImage2 from "../images/nehaImages/nehaImage2.jpg"
-import nehaImage3 from "../images/nehaImages/nehaImage3.jpg"
 import nehaImage4 from "../images/nehaImages/nehaImage4.jpg"
 import nehaImage5 from "../images/nehaImages/nehaImage5.jpg"
 import nehaImage6 from "../images/nehaImages/nehaImage6.jpg"
 import nehaImage7 from "../images/nehaImages/nehaImage7.jpg"
 import nehaImage8 from "../images/nehaImages/nehaImage8.jpg"
-import nehaImage9 from "../images/nehaImages/nehaImage9.jpg"
 import nehaImage10 from "../images/nehaImages/nehaImage10.jpg"
-import nehaImage11 from "../images/nehaImages/nehaImage11.jpg"
 import nehaImage13 from "../images/nehaImages/nehaImage13.jpg"
 import nehaImage14 from "../images/nehaImages/nehaImage14.jpg"
 import ReactPlayer from "react-player";
@@ -21,8 +17,6 @@ import nehaVideo3 from "../images/nehaImages/nehaVideo3.mp4"
 import DirectionView from "./DirectionView";
 import PropTypes from "prop-types";
 import Scrollbar from "../Components/scrollbar";
-
-
 
 const RandomShapeFeed = () => {
  const [openModal,setOpenModal]=useState(false);
@@ -72,8 +66,7 @@ const RandomShapeFeed = () => {
                                     justifyContent: 'center',
                                     alignItems: 'center',
                                     borderRadius: '8px',
-                                }}
-                           />
+                                }} />
                         </Card>
                     </DirectionView>
 
@@ -91,14 +84,12 @@ const RandomShapeFeed = () => {
                                     justifyContent: 'center',
                                     alignItems: 'center',
                                     borderRadius: '8px',
-                                }}
-                           >
+                                }}>
                             <Typography variant="subtitle2" sx={{color:"primary.darker",fontSize:{md:"35px",xs:"25px"}}}>{subItem?.text}</Typography>
                             </Box>
                         </Card>
                         </DirectionView>
                     ))}
-
                 </Grid>
             ))}
 
@@ -139,8 +130,7 @@ const RandomShapeFeed = () => {
                                     justifyContent: 'center',
                                     alignItems: 'center',
                                     borderRadius: '8px',
-                                }}
-                           />
+                                }}/>
                         </Card>
                         </DirectionView>
                     ))}
@@ -205,8 +195,7 @@ function ImageModal({open,data, handleClose}){
                     justifyContent: 'center',
                     alignItems: 'center',
                     borderRadius: '8px',
-                }}
-            />
+                }}/>
             </Scrollbar>
         </Dialog>
     )

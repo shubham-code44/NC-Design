@@ -16,15 +16,12 @@ export default function Router() {
     return useRoutes([
         {
             path: '/',
-            element: <Navigate to="/ncDesign/myspace/home" replace />,
+            element: <Navigate to="/ncDesign/home" replace />,
         },
         {
             path: 'ncDesign',
             element: <MainLayout />,
             children: [
-                {
-                    path: 'myspace',
-                    children: [
                         {path: 'about', element:  <About />},
                         {path: 'resume', element:  <Resume />},
                         {path: 'profile', element:  <Profile />},
@@ -32,8 +29,6 @@ export default function Router() {
                         {path: 'caseStudy1', element:  <PeopleManagementCaseStudyScreen />},
                         {path: 'caseStudy2', element:  <WebDesignCaseStudyScreen />},
                         {path: 'caseStudy3', element:  <TradeIndiaCaseStudyScreen />},
-                    ],
-                },
             ]
         },
         {

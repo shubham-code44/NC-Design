@@ -1,6 +1,5 @@
-import React, {useState} from "react";
-import {Box, Button, Card, Grid, Link, Stack, Typography} from "@mui/material";
-import {motion} from "framer-motion";
+import React from "react";
+import {Box, Card, Grid, Link, Stack, Typography} from "@mui/material";
 import caseImage1 from "../images/caseStudy2/caseImage1.png";
 import caseImage2 from "../images/caseStudy2/caseImage2.png";
 import caseImage3 from "../images/caseStudy2/caseImage3.png";

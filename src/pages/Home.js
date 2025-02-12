@@ -12,7 +12,7 @@ import DirectionView from "../component/DirectionView";
 const StyledGrid = styled('div')(({theme}) => ({
     display: 'grid',
     gap: '66px',
-    marginBottom:"20px",
+    paddingBottom:"20px",
     gridTemplateColumns: "repeat(auto-fit, minmax(310px,1fr))",
 }));
 
@@ -93,7 +93,10 @@ function HomeCard({data, index}) {
             borderRadius: 4, mt: 4, border: '1px solid',
             borderColor: 'grey.300',
             boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-            '.hover': {boxShadow: ' 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.22)'},
+            '&:hover': {
+                boxShadow: ' 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.22)',
+                background: 'linear-gradient(to bottom, #8697C4, #ffffff)'},
+            transition: 'background 0.3s ease',
             cursor: "pointer", backgroundColor: data?.bgcolor
         }}>
             <Grid container>

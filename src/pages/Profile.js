@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {Box, Button, Card, Container, Paper, Stack, Typography} from "@mui/material";
-import {useTheme, styled} from "@mui/material/styles";
+import {Box, Button, Card, Stack, Typography} from "@mui/material";
+import {styled} from "@mui/material/styles";
 import dashboardExpertise from "../images/home/dashboardExpertise.png"
 import mobileExpertise from "../images/home/mobileExpertise.png"
 import webExpertise from "../images/home/webExpertise.png"

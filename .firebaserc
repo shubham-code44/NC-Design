@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "nc-design"
-  }
+    "default": "nc-design",
+    "build": "nc-design"
+  },
+  "targets": {},
+  "etags": {}
 }

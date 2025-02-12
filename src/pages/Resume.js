@@ -1,11 +1,8 @@
 import React from "react"
 import {Box, Button, Card, Grid, IconButton, Link, Stack, Tab, Tabs, Typography} from "@mui/material";
 import nehaAvatar from "../images/nehaImages/nehaAvatar.png"
-import PdfPreviewViewer from "../Components/pdfPreview/PdfPreviewViewer";
 import ncResume from "../images/resume/ncResume.pdf"
 import {Icon} from "@iconify/react";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import {styled} from "@mui/material/styles";
 import DirectionView from "../component/DirectionView";
 
@@ -26,10 +23,8 @@ export default function Resume(){
         setValue(newValue);
     };
 
-
     return(
         <Grid container spacing={2} sx={{pt:15,px: {lg: 12, sm: 3, xs: 3}}}>
-
             <Grid item xs={12} lg={2.5}>
                 <DirectionView>
                 <Card sx={{p:4}}>
@@ -106,7 +101,11 @@ function DownloadPdf(){
 
     return(
         <Stack justifyContent="center" alignItems="center" spacing={2} sx={{mt:12}}>
-            <Card sx={{p:5}}>
+            <Card sx={{p:5,border: '1px solid',
+                borderColor: 'grey.300',
+                '&:hover': {
+                    boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'
+                }}}>
                 <Button size="large" startIcon={<Icon icon="mdi:file-pdf-box" width="34" height="34" />} component="a" target="_blank" href={ncResume} >
                     Download PDF
                 </Button>
@@ -121,21 +120,21 @@ function Certification(){
     return(
         <Box sx={{mt:4}}>
             <StyledGrid>
-                <Card sx={{p:2}}>
+                <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                     <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                         • Google Certification Program <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                         from </Typography> Google Coursera <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                         consist of 7 Certifications. </Typography> </Typography>
                 </Card>
 
-                <Card sx={{p:2}}>
+                <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                     <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                         • UI UX Certification Course <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                         Kaarwan Design School.
                     </Typography>  </Typography>
                 </Card>
 
-                <Card sx={{p:2}}>
+                <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                     <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                         • Graphic Design Certification Course <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                         Kaarwan Design School
@@ -155,27 +154,31 @@ function Education(){
     return(
         <Box sx={{mt:4}}>
             <StyledGrid>
-                <Card sx={{p:2}}>
+
+                <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                     <Stack direction="row" justifyContent="space-between" alignItems="center">
                         <Typography variant="h3" sx={{color:"primary.darker",fontSize:{lg:"18px",xs:"16px"}}}> University of Delhi </Typography>
                         <Typography  variant="body2" sx={{color:"black",fontWeight:500,fontSize: {md: "14px", xs: "14px"}}}>2020-2023  </Typography>
                     </Stack>
                     <Typography  variant="body2" sx={{color:"black",fontWeight:500,fontSize: {md: "14px", xs: "12px"},mt:0.5}}> B.A. (Hons) English ( 6.9 GPA )  </Typography>
                 </Card>
-                <Card sx={{p:2}}>
+
+                <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                     <Stack direction="row" justifyContent="space-between" alignItems="center">
                         <Typography variant="h3" sx={{color:"primary.darker",fontSize:{lg:"18px",xs:"16px"}}}> J.J Sr Sec School </Typography>
                         <Typography  variant="body2" sx={{color:"black",fontWeight:500,fontSize: {md: "14px", xs: "14px"}}}>2019-2020</Typography>
                     </Stack>
                     <Typography  variant="body2" sx={{color:"black",fontWeight:500,fontSize: {md: "14px", xs: "12px"},mt:0.5}}> Higher Secondary  ( 92% )  </Typography>
                 </Card>
-                <Card sx={{p:2}}>
+
+                <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                     <Stack direction="row" justifyContent="space-between" alignItems="center">
                         <Typography variant="h3" sx={{color:"primary.darker",fontSize:{lg:"18px",xs:"16px"}}}> J.J Sr Sec School </Typography>
                         <Typography  variant="body2" sx={{color:"black",fontWeight:500,fontSize: {md: "14px", xs: "14px"}}}>2017-2018</Typography>
                     </Stack>
                     <Typography  variant="body2" sx={{color:"black",fontWeight:500,fontSize: {md: "14px", xs: "12px"},mt:0.5}}> Senior Secondary  ( 88% )  </Typography>
                 </Card>
+
             </StyledGrid>
         </Box>
     )
@@ -183,21 +186,13 @@ function Education(){
 
 
 
-
-
-
-
 function Experience(){
-
 
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event,newValue) => {
         setValue(newValue);
     };
-
-    const arr1=[{title1:"",title2:""}]
-
 
     return(
         <Box>
@@ -215,22 +210,24 @@ function Experience(){
                 </Box>
                 <Box sx={{py:2}}>
                 <StyledGrid>
-                   <Card sx={{p:2}}>
+                    <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                        <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                            • Resolved internal B2B challenges <Typography variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}} component="span">
                                by designing a Billing App tailored to company needs. </Typography></Typography>
                    </Card>
 
-                    <Card sx={{p:2}}>
+                    <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                         <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                             • Achieved <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                             a substantial 20% increase in business sales </Typography>rates through effective implementation</Typography>
                     </Card>
-                    <Card sx={{p:2}}>
+
+                    <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                         <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"}}}>
                             • The custom Billing App streamlined processes,  <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                             boosted efficiency, and positively impacted the company's bottom line.</Typography></Typography>
                     </Card>
+
                 </StyledGrid>
                 </Box>
             </Stack>}
@@ -241,7 +238,8 @@ function Experience(){
                 </Box>
                 <Box sx={{py:2}}>
                     <StyledGrid>
-                        <Card sx={{p:2}}>
+
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                                 •  Led the creation of comprehensive <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 design systems for both web and app </Typography>applications, managing design requirements and <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
@@ -249,7 +247,7 @@ function Experience(){
                                 seamless and user-centric experience. </Typography>
                         </Card>
 
-                        <Card sx={{p:2}}>
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                                 • Spearheaded the creation and implementation of a <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 comprehensive design system </Typography> significantly enhancing user interface (UI) consistency and
@@ -257,7 +255,8 @@ function Experience(){
                                 notable <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 improvement in design consistency from 22% to 64%. </Typography></Typography>
                         </Card>
-                        <Card sx={{p:2}}>
+
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                                 • Directed the design and development <Typography variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}} component="span">
                                 of innovative user experiences (UX) for specific products such as PMS, LMS, and CORE HR,  </Typography> collaborating
@@ -266,8 +265,7 @@ function Experience(){
                                 align with user needs and business objectives.  </Typography> </Typography>
                         </Card>
 
-
-                        <Card sx={{p:2}}>
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"}}}>
                                 •  Conducted extensive  <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 user testing with over 320 participants,</Typography> utilizing
@@ -277,13 +275,13 @@ function Experience(){
                                 user satisfaction to 75%.</Typography></Typography>
                         </Card>
 
-                        <Card sx={{p:2}}>
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                                 • Drove the development and successful deployment <Typography variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}} component="span">
                                 of a new app design system, markedly increasing user engagement and operational efficiency.  </Typography>  </Typography>
                         </Card>
 
-                        <Card sx={{p:2}}>
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                                 • Engaged in strategic dialogues with stakeholders <Typography variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}} component="span">
                                 regarding ongoing and
@@ -291,7 +289,7 @@ function Experience(){
                                 advocating for user needs, business requirements, and technical feasibility. </Typography>  </Typography>
                         </Card>
 
-                        <Card sx={{p:2}}>
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                                 • Played a <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 pivotal role in onboarding over 7000 global </Typography> users and securing <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
@@ -301,7 +299,7 @@ function Experience(){
                                 five steps.</Typography>
                         </Card>
 
-                        <Card sx={{p:2}}>
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                                 • Pioneered the <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 inclusion of customization capabilities in product design architecture </Typography> , allowing for seamless integration of client-specific
@@ -314,18 +312,21 @@ function Experience(){
                     </Stack>
                     <Box sx={{mb:4}}>
                     <StyledGrid>
-                        <Card sx={{p:2}}>
+
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                                 • Enhanced <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 product consistency and usability </Typography> , leading to a significant
                                 increase in user engagement and satisfactions. </Typography>
                         </Card>
-                        <Card sx={{p:2}}>
+
+                        <Card sx={{p:2,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                             <Typography  variant="subtitle1" sx={{color:"black",fontWeight:500,fontSize: {md: "16px", xs: "14px"},}}>
                                 • Established the company as a <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}} component="span">
                                 leading choice for major clients
                             </Typography> , reinforcing its position in the competitive SaaS HRMS Development market. </Typography>
                         </Card>
+
                     </StyledGrid>
                     </Box>
                 </Box>
@@ -341,15 +342,11 @@ function Experience(){
 
 function Skill(){
 
-
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event,newValue) => {
         setValue(newValue);
     };
-
-    const arr1=[{title1:"",title2:""}]
-
 
     return(
         <Box>
@@ -364,7 +361,7 @@ function Skill(){
                 <Box sx={{py:2}}>
                     <StyledGrid>
                         {['Figma','Notion','Jira','Sketch','Framer','Webflow']?.map((item)=>(
-                                <Card sx={{p:3}}>
+                            <Card sx={{p:3,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                                     <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                                         {item}
                                     </Typography>
@@ -380,7 +377,7 @@ function Skill(){
                         {['Design System','UX Design','UI Aesthetics','Prototyping','Wireframing','Responsive Design','Journey Mapping',
                         'Interaction Design','Accessibility Standards','Product Strategy','Design Leadership','Information Architecture',
                         'Utility','Usability Testing','A/B Testing','Brand Implementation','Design Thinking','Mockups']?.map((item)=>(
-                            <Card sx={{p:3}}>
+                            <Card sx={{p:3,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                                 <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                                     {item}
                                 </Typography>
@@ -395,7 +392,7 @@ function Skill(){
                     <StyledGrid>
                         {['Critical Thinking','Time Management','Team Collaboration','Problem-Solving','Decision-Making','Empathy','Leadership Qualities',
                             'Growth Mindset']?.map((item)=>(
-                            <Card sx={{p:3}}>
+                            <Card sx={{p:3,border: '1px solid', borderColor: 'grey.300', '&:hover': {boxShadow: ' 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20)'}}}>
                                 <Typography variant="subtitle1" sx={{fontSize: {md: "16px", xs: "14px"},color:"primary.dark"}}>
                                     {item}
                                 </Typography>
